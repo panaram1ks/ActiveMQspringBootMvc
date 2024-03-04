@@ -45,7 +45,7 @@ public class ViewController {
 			map.put("product", product);
 			ObjectMapper mapper = new ObjectMapper();
 			String messageStr = mapper.writeValueAsString(product);
-			messagePublisher.sendMessage("Demo-Topic", messageStr);
+			messagePublisher.sendMessage("mytestqueue", messageStr);
 		}catch(Exception e){
 			e.printStackTrace();
 		}
