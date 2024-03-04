@@ -20,7 +20,7 @@ public class HibernateConnection {
 		Properties database = new Properties();
 		database.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
 		database.setProperty("hibernate.connection.username", "root");
-		database.setProperty("hibernate.connection.password", "");
+		database.setProperty("hibernate.connection.password", "my-secret-pw");
 		database.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/spring");
 		database.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
 		database.setProperty("hibernate.show_sql", "true");
